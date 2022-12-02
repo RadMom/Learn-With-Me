@@ -1,0 +1,56 @@
+* {
+    border: solid 1px black;
+    margin: 3px;
+    background-color: #f7f765;
+    
+}
+html{
+    
+    height: auto;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 15%;
+}
+.ads {
+    display: flex;
+    flex-direction: row;
+}
+.info-links {
+    display: flex;
+    flex-direction: row;
+}
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.info-menu {
+    width: 15%;
+    height: auto;
+}
+
+.main-info {
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+}
