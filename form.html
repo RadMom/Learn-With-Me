@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>FORM</title>
+    </head>
+    <body>
+        <h1>FORM</h1>
+        <form>
+            <label for="username">Enter username:</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+                required
+            />
+            <br />
+            <br />
+            <label for="email">Enter email:</label>
+            <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+                required
+            />
+            <br />
+            <br />
+            <label for="password">Enter password:</label>
+            <input
+                type="text"
+                id="password"
+                name="password"
+                placeholder="Enter password"
+                required
+            />
+            <br />
+            <br />
+            <p>Select gender:</p>
+            <!-- name attribute (gender) groups all of them together. We can sellect only one gender.
+             If we want to select more then one the name attribute must be different for every input.
+            We need value attribute! We send tha data from it to the server.
+            requred only on one of them means that we must choose something!-->
+            <input
+                type="radio"
+                name="gender"
+                value="male"
+                id="option-1"
+                required
+            />
+            <label for="option-1">Male</label>
+            <input
+                type="radio"
+                name="gender"
+                value="female"
+                id="option-2"
+            />
+            <label for="option-2">Female</label>
+            <input
+                type="radio"
+                name="gender"
+                value="other"
+                id="option-3"
+            />
+            <label for="option-3">Other</label>
+            <br /><br />
+            <label for="question">Question:</label>
+            <select
+                name="question"
+                id="question"
+            >
+                <option value="q1">First question</option>
+                <option value="q2">Second question</option>
+                <option value="q3">Third question</option>
+            </select>
+            <br />
+            <label for="answer">Answer:</label>
+            <input
+                type="text"
+                name="answer"
+                id="answer"
+                required
+            />
+            <br /><br />
+            <label for="bio">Your bio...</label><br />
+            <textarea
+                name="bio"
+                id="bio"
+                cols="30"
+                rows="10"
+                placeholder="Enter you bio..."
+                required
+            ></textarea>
+            <br /><br />
+            <input
+                type="submit"
+                value="Submit the form"
+            />
+            <!-- http://127.0.0.1:5500/form.html?username=RadMom1111&email=nikoletkaaa_rz%40abv.bg&password=1234&gender=male&question=q2&answer=Second+answer&bio=My+bio -->
+        </form>
+    </body>
+</html>
