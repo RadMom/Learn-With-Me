@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-ligt: rgb(236, 225, 225);
+    --primary-dark: rgb(85, 79, 79);
+
+    --success: rgb(17, 230, 17);
+    --error: rgb(139, 179, 165);
+}
+/* body {
+    margin: 0;
+} */
+
+.fullscreen-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("12813813579806 (1).jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: var(--primary-dark);
+    opacity: 0.8;
+    box-shadow: 0px 0px 45px 10px var(--primary-dark);
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.login-container h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form div label {
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+.form div input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: var(--primary-ligt);
+    outline: none;
+}
+
+.form div input:focus {
+    background-color: rgb(241, 189, 189);
+    opacity: 0.9;
+}
+
+.login-button {
+    padding: 0.5em 1em;
+    margin-top: 1.2rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.login-button:focus,
+.login-button:hover {
+    background-color: black;
+    color: white;
+}
